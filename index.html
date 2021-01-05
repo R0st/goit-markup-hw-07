@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./sass/utils/_modern-normalize.scss">
     <title>WebStudio</title>
     
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -57,7 +56,6 @@
                         <button type="button" class="btn-hero" data-modal-open>Заказать услугу</button>
                         <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
-                                <!-- <a href="" class="btn-hero"><span class="text-hero">Заказать услугу</span></a> -->
                                 
                                 <button data-modal-close class="close-button">
                                     <svg class="form-close">
@@ -140,7 +138,7 @@
         
             <!-- наша работа -->
             <section class="our-jobs">
-                <div class="container jobs">
+                <div class="container">
                     <h2 class="h2-invis">#</h2>
                     <!-- То что мы делаем -->
                     <ul class="features">
@@ -490,23 +488,20 @@
                 <h3 class="footer-h3">Подпишитесь на рассылку</h3>
             <form action="" autocomplete="off" class="footer-distribution">
                 
-                <label class="footer-mail">
+                <label>
                     <input class="footer-input" type="mail" name="mail" placeholder="E-mail">
                 </label>
             
                     <button type="button" class="btn-footer">
-                        <span class="btn-hero-text">Подписаться</span>
+                        Подписаться
                         <svg class="footer-svg" width="24" height="24">
                             <use href="./images/decoration/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
             </form>
             </div>
-            
-        </div>
-            
-        
-    </footer> 
+        </div>        
+    </footer>  
     <script src="./js/modal.js"></script>  
 </body>
 </html>

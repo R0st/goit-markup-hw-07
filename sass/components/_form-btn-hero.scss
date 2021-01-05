@@ -1,0 +1,18 @@
+
+.form .btn-hero {
+    position: absolute;
+    min-width: 200px;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,240px);
+    }
+    
+    .form .btn-hero:hover,
+    .form .btn-hero:focus {
+      cursor: pointer;
+      background: #188CE8;
+    
+      transition-duration: 250ms;
+      transition-delay: $timing-function;
+    }

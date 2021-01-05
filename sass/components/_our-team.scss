@@ -1,0 +1,42 @@
+/* наша команда */
+.bcg-our-team {
+    background-color: $bcg-our-team;
+  }
+  .container.our-team {
+   background-color: $bcg-our-team;
+   padding-top: 94px;
+   padding-bottom: 94px;
+ 
+  }
+  .team-list {
+   background-color: $white-color;
+   margin-right: 30px;
+   /* margin-bottom: 188px; */
+   text-align: center;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+ .team-list:last-child {
+   margin-right: 0;
+ } 
+   .workers > img {
+    margin-bottom: 30px;
+    display: block;
+  }
+  .title.name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   letter-spacing: 0.03em;
+   margin-bottom: 10px;
+  }
+  
+ .workers-prof {
+   margin-bottom: 16px;
+ }
+ .social-list {
+   display: flex;
+   padding: 0 32px 30px;
+ }
+ .social-icon:not(:last-child) {
+   margin-right: 10px;
+ }
