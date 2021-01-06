@@ -1,9 +1,7 @@
 /* logo */
 .logo {
     color: $accent-color;
-    font-family: Raleway,sans-serif;
-    font-style: normal;
-    font-weight: bold;
+    font-family: $logo-font,sans-serif;
     font-size: 26px;
     line-height: 1.19;  
   }

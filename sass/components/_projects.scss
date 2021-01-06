@@ -55,9 +55,7 @@
    display: inline-block;
    position: absolute;
    
-   font-family: Roboto;
-   font-style: normal;
-   font-weight: normal;
+   font-family: $text-font;
    font-size: 18px;
    line-height: 1.56;
    letter-spacing: 0.03em;
@@ -101,7 +99,7 @@
      margin-bottom: 30px;
    } */
 .projects .title {
-    font-weight: bold;
+    font-family: $title-font;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -110,7 +108,7 @@
 
 
 .projects .portfolio-jobs {
-    font-weight: normal;
+    font-family: $text-font;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

@@ -6,7 +6,7 @@
   }
   .jobs-img .title,
   .team > h2 {
-     font-weight: bold;
+     font-family: $title-font;
      font-size: 36px;
      line-height: 1.16;
      letter-spacing: 0.03em;
@@ -26,17 +26,15 @@
     display: flex;
     width: 370px;
     height: 70px;
-    font-family: Roboto;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 16px;
-   justify-content: center;
-   align-items: center;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   color: $white-color;
-   background-color: $bcg-jobs-img;
+    font-family: $title-font;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bcg-jobs-img;
  
    position: absolute;
    bottom: 0;
@@ -58,15 +56,16 @@
  }
  
   .features .title {
-   font-weight: bold;
+   font-family: $title-font;
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
   }
  
   .features p {
-   line-height: 1.71;
-   letter-spacing: 0.03em;
+    font-family: $text-font;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
   }
   .features-list {
     margin-right: 30px;
