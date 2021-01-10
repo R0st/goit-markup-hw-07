@@ -14,17 +14,28 @@
     margin-right: 30px;
     box-sizing: border-box;
     
+    &-link {
+      display: flex;
+      width: 170px;
+      height: 90px;
+      align-items: center;
+      justify-content: center; 
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+    border-color: $accent-color;
+    transition-duration: 250ms;
+    transition-delay: $timing-function;
+    }
   }
-  .client-link {
-    display: flex;
-    width: 170px;
-    height: 90px;
-    align-items: center;
-    justify-content: center; 
-  }
-  .client:last-child {
-    margin-right: 0;
-  }
+  
+
+  
   .logo {
     fill: $color-socseti;
   }
@@ -34,13 +45,4 @@
     fill: $accent-color;
     transition-duration: 250ms;
     transition-delay: $timing-function;
-  }
-  
-  
-    .client:hover,
-    .client:focus {
-    border-color: $accent-color;
-    transition-duration: 250ms;
-    transition-delay: $timing-function;
-  
-  }
+  }   

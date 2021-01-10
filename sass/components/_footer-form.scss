@@ -4,12 +4,6 @@
     flex-direction: column;
     padding-left: 93px;
   }
-  .footer-distribution {
-  
-    display: flex;
-    align-items: center;
-    
-  }
   .footer-input {
     background-color: $main-bcg;
     width: 358px;
@@ -20,15 +14,18 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding: 15px 16px;
   }
-  .footer-distribution .btn-footer {
-    margin-left: 12px;
-  
-  }
-  .footer-distribution .footer-svg {
-    margin-left: 10px;  
-  }
   
   .footer-distribution {
-    position: relative;  
+    position: relative;
+    display: flex;
+    align-items: center;  
+
+    & .btn-footer {
+      margin-left: 12px;
+    }
+
+    & .footer-svg {
+      margin-left: 10px;  
+    }
   }
   

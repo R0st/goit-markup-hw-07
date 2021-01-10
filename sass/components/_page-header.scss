@@ -24,7 +24,7 @@
   .site-nav .link,
   .auth-nav .link {
     display: block;
-    font-family: $link-font;
+    font-family: $link-font, sans-serif;
     line-height: 1.14;
     letter-spacing: 0.02em;
     padding-top: 32px;
@@ -33,17 +33,17 @@
     position: relative;
    }
    .link::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: $accent-color;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transition: transform 250ms $timing-function;
-    border-radius: 2px; 
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $accent-color;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transition: transform 250ms $timing-function;
+      border-radius: 2px; 
    }
    .site-nav .link:hover::after {
     transform: scaleX(1);
@@ -51,7 +51,22 @@
   
    .item {
     margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .link {
+      display: flex;
+      align-items: center;
+    }
+
+    &.envelope,
+    &.vector {
+      fill: $primary-text-color;
   }
+  }
+
   .envelope-icon {
     padding: 0;
     border: none;
@@ -68,40 +83,29 @@
     margin-right: 10px;
   }
   
-  .item.envelope,
-  .item.vector {
-    fill: $primary-text-color;
-  }
-  
-  .item:last-child {
-    margin-right: 0;
-  }
    .auth-nav {
      display: flex;
      margin-left: auto;
      color: $primary-text-color;
+
+     & .link {
+      color: $primary-text-color; 
+    }
+
+    & .link,
+    & .envelope-icon,
+    & .vector-icon {
+      transition-duration: 250ms;
+      transition-delay: $timing-function;
+    }
    }
-   .item .link {
-     display: flex;
-     align-items: center;
-   }
-  
-    .auth-nav .link {
-    color: $primary-text-color; 
-  }
-  .auth-nav .link,
-  .auth-nav .envelope-icon,
-  .auth-nav .vector-icon {
-    transition-duration: 250ms;
-    transition-delay: $timing-function;
-  }
-  
+    
    .auth-nav .link:hover .envelope-icon,
    .auth-nav .link:focus .envelope-icon,
    .auth-nav .link:hover .vector-icon,
    .auth-nav .link:focus .vector-icon,
    .auth-nav .link:hover,
    .auth-nav .link:focus {
-    color: $accent-color;
-    fill: $accent-color;
+      color: $accent-color;
+      fill: $accent-color;
    }

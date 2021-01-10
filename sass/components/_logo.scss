@@ -1,14 +1,16 @@
 /* logo */
 .logo {
     color: $accent-color;
-    font-family: $logo-font,sans-serif;
+    font-family: $logo-font, sans-serif;
     font-size: 26px;
-    line-height: 1.19;  
+    line-height: 1.19; 
+    
+    &-secondary {
+      color: $white-color;
+    }
   }
   
   .header-logo {
     margin-right: 93px;
   }
-  .logo-secondary {
-    color: $white-color;
-  } 
+   

@@ -4,11 +4,13 @@
     margin: 0;
   }
   .footer-social .social-link {
-    background-color:  $primary-text-color;
+    background-color:  $primary-text-color;  
   }
+  
   .footer-social .logo-icon {
     fill: $white-color;
   }
+  
   .footer-social .social-link:hover,
   .footer-social .social-link:focus {
     background-color: $accent-color;

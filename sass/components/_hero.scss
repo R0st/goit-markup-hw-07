@@ -1,5 +1,16 @@
 /* hero */
-.hero-page {
+
+ 
+  .hero {
+   font-family: $hero-font, sans-serif;
+   font-size: 44px;
+   line-height: 136%;
+   color: $white-color;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   padding-bottom: 30px;
+
+   &-page {
     /* background-color: var(--main-bcg);  */
     max-width: 1600px;
     margin-left: auto;
@@ -16,16 +27,7 @@
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
-  }
- 
-  .hero {
-   font-family: $hero-font;
-   font-size: 44px;
-   line-height: 136%;
-   color: $white-color;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
-   padding-bottom: 30px;
+    }
   }
  
    /* модальное окно-overlay(backdrop) */
@@ -38,12 +40,13 @@
      background: rgba(0, 0, 0, 0.2);
      opacity: 1;
      transition: opacity 250ms $timing-function;
+    /* скрываем модальное окно */
+     &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
    }
-   /* скрываем модальное окно */
-   .backdrop.is-hidden {
-     opacity: 0;
-     pointer-events: none;
-   }
+   
     /* делает кликабелным все что под модалкой */
    .modal {
      position: absolute;

@@ -14,32 +14,36 @@
  
   .pictures {
     display: flex;
+    
+    &  img {
+      margin-right: 30px;
+      display: block;
+   }
   }
-  .pictures  img {
-     margin-right: 30px;
-     display: block;
-  }
+  
   .card {
     position: relative;
+
+    &-text {
+      display: flex;
+      width: 370px;
+      height: 70px;
+      font-family: $title-font, sans-serif;
+      font-size: 14px;
+      line-height: 1.14;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white-color;
+      background-color: $bcg-jobs-img;
+   
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   } 
-  .card-text {
-    display: flex;
-    width: 370px;
-    height: 70px;
-    font-family: $title-font;
-    font-size: 14px;
-    line-height: 1.14;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-    background-color: $bcg-jobs-img;
- 
-   position: absolute;
-   bottom: 0;
-   left: 0;
-  }
+  
    .pictures img:last-child {
       margin-right: 0;
   }
@@ -50,37 +54,42 @@
  .features {
    display: flex;
    flex-wrap: wrap;
- }
- .features > .item {
-   margin-right: 30px;
- }
- 
-  .features .title {
-   font-family: $title-font;
-   line-height: 1.14;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-  }
- 
-  .features p {
+
+   & .title {
+    font-family: $title-font, sans-serif;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+   }
+
+   & p {
     font-family: $text-font;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
+  &-icon {
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $bcg-our-team;
+    border-radius: 4px;
+  }
+
+  & > .item {
+    margin-right: 30px;
+  }
+ }
+ 
   .features-list {
     margin-right: 30px;
     width: 270px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .features-list:last-child {
-    margin-right: 0;
-  }
- .features-icon {
-   display: block;
-   height: 120px;
-   margin-bottom: 30px;
-   background: $bcg-our-team;
-   border-radius: 4px;
- }
+  
   .antenna-icon,
   .clock-icon,
   .diagram-icon,
