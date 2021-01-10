@@ -6,13 +6,15 @@
     left: 50%;
     
     transform: translate(-50%,240px);
-    }
-    
-    .form .btn-hero:hover,
-    .form .btn-hero:focus {
+
+    &:hover,
+    &:focus {
       cursor: pointer;
       background: #188CE8;
     
       transition-duration: 250ms;
       transition-delay: $timing-function;
     }
+  }
+    
+    

@@ -1,8 +1,12 @@
 /* container */
 .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    &.container-portfolio {
+      padding-bottom: 94px;
   }
+}

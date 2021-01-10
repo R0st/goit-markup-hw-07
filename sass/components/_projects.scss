@@ -49,7 +49,7 @@
     }
 
     & .title {
-      font-family: $title-font;
+      font-family: $title-font, sans-serif;
       font-size: 18px;
       line-height: 2;
       letter-spacing: 0.06em;
@@ -58,7 +58,7 @@
   
   
     & .portfolio-jobs {
-      font-family: $text-font;
+      font-family: $text-font, sans-serif;
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.03em;
