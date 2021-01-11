@@ -1,69 +1,72 @@
 /* наши работы */
 .our-jobs {
-    padding-top: 94px;
-    padding-bottom: 94px;
- 
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.jobs-img .title,
+.team > h2 {
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.pictures {
+  display: flex;
+
+  & img {
+    margin-right: 30px;
+    display: block;
   }
-  .jobs-img .title,
-  .team > h2 {
-     font-family: $title-font, sans-serif;
-     font-size: 36px;
-     line-height: 1.16;
-     letter-spacing: 0.03em;
-  }
- 
-  .pictures {
+}
+
+.card {
+  position: relative;
+
+  &-text {
     display: flex;
-    
-    &  img {
-      margin-right: 30px;
-      display: block;
-   }
-  }
-  
-  .card {
-    position: relative;
+    width: 370px;
+    height: 70px;
+    font-family: $main-font, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bcg-jobs-img;
 
-    &-text {
-      display: flex;
-      width: 370px;
-      height: 70px;
-      font-family: $title-font, sans-serif;
-      font-size: 14px;
-      line-height: 1.14;
-      justify-content: center;
-      align-items: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $white-color;
-      background-color: $bcg-jobs-img;
-   
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-  } 
-  
-   .pictures img:last-child {
-      margin-right: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
- 
- .title.works {
-   margin-bottom: 10px;
- }
- .features {
-   display: flex;
-   flex-wrap: wrap;
+}
 
-   & .title {
-    font-family: $title-font, sans-serif;
+.pictures img:last-child {
+  margin-right: 0;
+}
+
+.title.works {
+  margin-bottom: 10px;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .title {
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-   }
+  }
 
-   & p {
-    font-family: $text-font, sans-serif;
+  & p {
+    font-family: $main-font, sans-serif;
+    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
@@ -79,22 +82,22 @@
   & > .item {
     margin-right: 30px;
   }
- }
- 
-  .features-list {
-    margin-right: 30px;
-    width: 270px;
+}
 
-    &:last-child {
-      margin-right: 0;
-    }
+.features-list {
+  margin-right: 30px;
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
   }
-  
-  .antenna-icon,
-  .clock-icon,
-  .diagram-icon,
-  .astronaut-icon {
-   width: 70px;
-   height: 70px;
+}
+
+.antenna-icon,
+.clock-icon,
+.diagram-icon,
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
   //  padding: 25px 100px;
-  }
+}
