@@ -56,7 +56,8 @@ body {
   }
 
   .title.h2 {
-    font-family: $title-font, sans-serif;
+    font-family: $main-font;
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
