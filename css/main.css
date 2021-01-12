@@ -95,7 +95,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -337,6 +337,7 @@ summary {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #757575;
   background-color: #ffffff;
   text-decoration: none;
@@ -389,7 +390,7 @@ a:hover, a:focus {
 }
 
 .title.h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -447,6 +448,7 @@ a:hover, a:focus {
 /* модальное окно-overlay(backdrop) */
 .backdrop {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -469,11 +471,9 @@ a:hover, a:focus {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 40px;
 }
 
 .close-button {
@@ -518,6 +518,7 @@ a:hover, a:focus {
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 40px;
 }
 
 .form-close {
@@ -567,8 +568,6 @@ a:hover, a:focus {
   display: inline-block;
   top: -16px;
   left: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -617,21 +616,18 @@ a:hover, a:focus {
     height: 12px;
   } */
 .form .btn-hero {
-  position: absolute;
-  min-width: 200px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 240px);
-          transform: translate(-50%, 240px);
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form .btn-hero:hover, .form .btn-hero:focus {
   cursor: pointer;
   background: #188CE8;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* checkbox */
@@ -768,8 +764,6 @@ a:hover, a:focus {
 .projects-text {
   display: inline-block;
   position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -796,8 +790,6 @@ a:hover, a:focus {
 }
 
 .projects .portfolio-jobs {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -880,6 +872,10 @@ a:hover, a:focus {
   border-radius: 50%;
 }
 
+.social-link.trans {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-link:hover, .social-link:focus {
   background-color: #2196f3;
   -webkit-transition-duration: 250ms;
@@ -934,7 +930,7 @@ a:hover, a:focus {
 .btn {
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 162%;
   letter-spacing: 0.03em;
@@ -947,6 +943,8 @@ a:hover, a:focus {
 .btn:hover, .btn:focus {
   color: #ffffff;
   background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1147,6 +1145,10 @@ a:hover, a:focus {
   display: block;
 }
 
+.pictures img:last-child {
+  margin-right: 0;
+}
+
 .card {
   position: relative;
 }
@@ -1158,7 +1160,7 @@ a:hover, a:focus {
   width: 370px;
   height: 70px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   -webkit-box-pack: center;
@@ -1201,14 +1203,20 @@ a:hover, a:focus {
 }
 
 .features p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .features-icon {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
@@ -1390,13 +1398,19 @@ a:hover, a:focus {
 }
 
 .client {
-  width: 170px;
-  height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   margin-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.client:last-child {
+  margin-right: 0;
+}
+
+.client:hover, .client:focus {
+  border-color: #2196f3;
 }
 
 .client-link {
@@ -1411,31 +1425,14 @@ a:hover, a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.client:last-child {
-  margin-right: 0;
-}
-
-.client:hover, .client:focus {
-  border-color: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo {
   fill: #afb1b8;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client:hover .logo,
-.client:focus .logo {
+.client-link:hover, .client-link:focus {
+  border-color: #2196f3;
   fill: #2196f3;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer form */

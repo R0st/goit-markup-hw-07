@@ -12,6 +12,10 @@
     height: 44px;
     border-radius: 50%;
 
+    &.trans {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
     &:hover,
     &:focus {
       background-color: $accent-color;
