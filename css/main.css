@@ -620,7 +620,6 @@ a:hover, a:focus {
 .form .btn-hero {
   width: 200px;
   height: 50px;
-  margin-top: 30px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
