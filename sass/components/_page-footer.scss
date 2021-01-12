@@ -27,7 +27,7 @@
   &-block {
     padding-bottom: 0;
     margin-bottom: 0;
-    padding-right: 70px;
+    margin-right: auto;
   }
 
   &-h3 {
@@ -46,6 +46,7 @@
 .logo-footer {
   display: flex;
   justify-content: space-between;
+  
 }
 .logo-div {
   margin-bottom: 20px;

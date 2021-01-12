@@ -28,6 +28,7 @@
   &-overlay {
     position: relative;
     overflow: hidden;
+    height: 294px;
   }
 
   &-text {
@@ -89,9 +90,9 @@
   margin-right: 0;
 }
 
-.overlay {
-  position: relative;
-}
+// .overlay {
+//   position: relative;
+// }
 
 .projects-link:hover .projects-text,
 .projects-link:focus .projects-text {
