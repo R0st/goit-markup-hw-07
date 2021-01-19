@@ -405,19 +405,45 @@ a:hover, a:focus {
 :focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+.container.jobs-img {
+  display: none;
+}
+
 /* container */
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid tomato;
 }
 
 .container.container-portfolio {
-  padding-top: 94px;
-  border-top: 1px solid #ECECEC;
-  padding-bottom: 94px;
+  border-top: 1px solid #ececec;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+  }
 }
 
 /* hero */
@@ -724,16 +750,6 @@ a:hover, a:focus {
 }
 
 /* projects  элементы списка*/
-.buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 50px;
-}
-
 /* projects */
 .projects {
   display: -webkit-box;
@@ -895,6 +911,38 @@ a:hover, a:focus {
 }
 
 /* button */
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-list {
+    width: 100%;
+  }
+}
+
 .btn-hero {
   display: inline-block;
   color: #ffffff;
@@ -986,21 +1034,6 @@ a:hover, a:focus {
 }
 
 /* navigation */
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
@@ -1109,11 +1142,6 @@ a:hover, a:focus {
 }
 
 /* наши работы */
-.our-jobs {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .jobs-img .title,
 .team > h2 {
   font-family: "Roboto", sans-serif;
@@ -1127,6 +1155,16 @@ a:hover, a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .pictures {
+    width: 768px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .pictures img {
@@ -1138,16 +1176,7 @@ a:hover, a:focus {
   margin-right: 0;
 }
 
-.card {
-  position: relative;
-}
-
 .card-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 370px;
-  height: 70px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -1162,9 +1191,13 @@ a:hover, a:focus {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .card-text {
+    width: 450px;
+    height: 50px;
+  }
 }
 
 .pictures img:last-child {
@@ -1173,6 +1206,12 @@ a:hover, a:focus {
 
 .title.works {
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .title.works {
+    text-align: center;
+  }
 }
 
 .features {
@@ -1216,9 +1255,18 @@ a:hover, a:focus {
   margin-right: 30px;
 }
 
-.features-list {
-  margin-right: 30px;
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .features-list {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    width: 768px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .features-list:last-child {
@@ -1238,19 +1286,40 @@ a:hover, a:focus {
   background-color: #f5f4fa;
 }
 
-.container.our-team {
-  background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container.our-team {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container.our-team {
+    width: 768px;
+  }
 }
 
 .team-list {
   background-color: #ffffff;
   margin-right: 30px;
-  /* margin-bottom: 188px; */
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .team-list {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    width: 768px;
+    margin: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .team-list:last-child {
@@ -1260,6 +1329,23 @@ a:hover, a:focus {
 .workers > img {
   margin-bottom: 30px;
   display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .workers > img {
+    width: 450px;
+    height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .workers > img {
+    width: 354px;
+    height: 374px;
+  }
+  .workers > img :not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .title.name {
@@ -1280,6 +1366,26 @@ a:hover, a:focus {
   display: -ms-flexbox;
   display: flex;
   padding: 0 32px 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .social-list {
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    width: 768px;
+  }
 }
 
 .social-icon:not(:last-child) {
@@ -1375,15 +1481,31 @@ a:hover, a:focus {
 }
 
 /* clients */
-.static-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    width: 480px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 768px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .client {
@@ -1392,6 +1514,23 @@ a:hover, a:focus {
   margin-right: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+  .client {
+    margin-bottom: 30px;
+  }
+  .client:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client {
+    width: 768px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .client:last-child {
@@ -1414,7 +1553,7 @@ a:hover, a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1), border 2500ms cubic-bezier(0.4, 0, 0.2, 1);

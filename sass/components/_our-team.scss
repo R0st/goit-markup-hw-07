@@ -2,15 +2,30 @@
 .bcg-our-team {
   background-color: $bcg-our-team;
 }
+
 .container.our-team {
-  background-color: $bcg-our-team;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 .team-list {
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    margin: 0;
+    flex-basis: 50%;
+  }
+
   background-color: $white-color;
   margin-right: 30px;
-  /* margin-bottom: 188px; */
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,6 +38,20 @@
 .workers > img {
   margin-bottom: 30px;
   display: block;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    height: 460px;
+    // margin: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 374px;
+    & :not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .title.name {
   font-family: $main-font, sans-serif;
@@ -39,6 +68,18 @@
 .social-list {
   display: flex;
   padding: 0 32px 30px;
+
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 .social-icon:not(:last-child) {
   margin-right: 10px;

@@ -1,8 +1,9 @@
 /* наши работы */
-.our-jobs {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+// .our-jobs {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
 .jobs-img .title,
 .team > h2 {
   font-family: $main-font, sans-serif;
@@ -14,6 +15,12 @@
 
 .pictures {
   display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
 
   & img {
     margin-right: 30px;
@@ -26,12 +33,16 @@
 }
 
 .card {
-  position: relative;
+  // position: relative;
 
   &-text {
-    display: flex;
-    width: 370px;
-    height: 70px;
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+      height: 50px;
+    }
+    // display: flex;
+    // width: 370px;
+    // height: 70px;
     font-family: $main-font, sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -43,9 +54,9 @@
     color: $white-color;
     background-color: $bcg-jobs-img;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
   }
 }
 .pictures img:last-child {
@@ -54,10 +65,14 @@
 
 .title.works {
   margin-bottom: 10px;
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
 }
 .features {
   display: flex;
   flex-wrap: wrap;
+  // align-items: center;
 
   & .title {
     font-family: $main-font, sans-serif;
@@ -68,8 +83,6 @@
   }
 
   & p {
-    // font-family: $main-font, sans-serif;
-    // font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
@@ -90,8 +103,13 @@
 }
 
 .features-list {
-  margin-right: 30px;
-  width: 270px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -104,5 +122,4 @@
 .astronaut-icon {
   width: 70px;
   height: 70px;
-  //  padding: 25px 100px;
 }
